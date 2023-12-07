@@ -1,0 +1,36 @@
+git config --global user.name "Ali Abbas"               # to set the name
+git config --global user.email aliabbas8152@gmail.com   # to set the email address
+git config --global user.name                           # to see the name of the author
+git config --global user.email                          # to see the email of the author
+git config --global --edit                              # to edit the details
+
+git init                       # to initialise the git
+git status                     # to check the status(changes) of the files
+ls -a                          # to check which file git is tracking
+git add filename               # to track the file (staging area i.e. file will be hold before commit)
+git commit -m "Message"        # to commit the file with a meaningful Message
+git log                        # to check how many commits happend previously
+git add .                      # all files will go to staging area
+git checkout <hash code>       # file will be deleted.. will undo the work
+git checkout master            # will go to master directory 
+git branch                     # to check the branches
+git branch <branch name>       # to create a branch
+git checkout <branch name>     # switch to that branch
+git checkout -b <branch name>  # will create a branch and also switch to it
+git merge <branch name>        # will merge the branch to it parent branch
+touch .gitignore               # will create a file which will not be tracked by the git. we have to write the name of the file inside it which you don't want to tracked(to store sensitive info).
+
+git remote -v                  # to remote the repo
+
+Now go to Github Account->repository copy links there like below
+git remote add origin https://github.com/aliabbas8152/my_rep.git
+git branch -M main
+git push -u origin main
+
+git push                           # will push the code to github if changes happens
+git push -u origin <branch name>   # will push the branch
+
+git clone <repo url>               # will clone the code that you have forked to local system
+vim <file name>                    # to open the file to make changes
+cat <file name>                    # to check the changes that you have made 
+ 
