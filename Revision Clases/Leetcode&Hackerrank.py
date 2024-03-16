@@ -51,7 +51,7 @@
 
 
 
-arr = [2,3,6,6,5]
+# arr = [2,3,6,6,5]
 
 # x = arr.remove(max(arr))
 # print(arr)
@@ -63,7 +63,45 @@ arr = [2,3,6,6,5]
 # print()
 
 
-s = set(arr)
-print(s)
+# s = set(arr)
+# print(s)
 
-x = s.remove(max(s))
+# x = s.remove(max(s))
+
+
+
+
+
+
+# user = 153
+# l = len(str(user))
+# sum = 0
+
+# while user > 0:
+#     digit = user % 10
+#     sum = sum + digit**l
+#     user = user // 10  
+
+# if sum == user:
+#     print("Number is Armstrong...") 
+# else:
+#     print("Number is Not Armstrong..")   
+
+
+import re
+
+def is_valid_regex(pattern):
+    try:
+        re.compile(pattern)
+        return True
+    except re.error:
+        return False
+
+if __name__ == "__main__":
+    # Input the number of test cases
+    t = int(input())
+
+    # Input regex patterns and check their validity
+    for _ in range(t):
+        pattern = input()
+        print(is_valid_regex(pattern))
